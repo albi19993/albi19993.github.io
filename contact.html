@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Formularz kontaktowy
+    </div>
+    <!--span jest elementem liniowym -wyswietla się wtym samym wierszu co poprzedni element, p jest elementem ktory pojaiwa sie w nowym wierszu, podobnie div(elementy blokowe) -->
+    <span>Write a message</span>
+    <!--formularz(<form>) required sprawia ze musimy to wypelnic aby przegladarka mogla wyslac, jest to tak zwana walidacja po stronie przegladarki -->
+    <form>
+        First name: <br>
+        <input type="text" required>
+        <br>
+        E-mail:
+        <br>
+        <input type="email" required>
+        <br>
+        Message:
+        <br>
+        <textarea cols="15" rows="10">your message</textarea>
+        <br>
+        <input id="submit_button" type="submit" value="wyslij">
+    </form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lekcje html</title>
+     <!--dodawanie css robimy za pomoca tagu <link> rel=stylesheet oznacza ze jest to css-->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--<headre>,<article>,<footer> to tagi dla html5 -->
+    <header>    
+        <h1>Welcome to </h1>
+        <!--KOMENTARZ br daje odstęp(nowa linia), można go używać wewnątrz tagów-->
+        <br>
+        <h3>po odstepie</h3>
+    </header>
+
+    <br>
+    <!--p - paragraf(mniejszy tekst)-->
+    <p> Artykul </p>
+    <!--div sluży do przechowywania sekcji na stronie (sekcja składa sie z wielu tagów)-->
+    <div>
+        <!--tag <strong> lub tag <b> mozna uzyc do pogrubienia tekstu,
+            <mark> podwietla teks, <i> daje kursywe, <sup> podwyzsza tekst,
+                <small> zmniejsza czcionke-->
+        <strong>Formularz</strong> <mark>kontaktowy</mark> <i>mojej osoby</i>
+        <sup>*</sup>
+        <br><br>
+        <small>
+            <sup>*</sup>
+        Imie: Albert Nazwisko:Bąk
+        </small>
+    </div>
+    <br>
+    <div>
+        <!--listy sa uporzadkowane(ol)-z numeracją lub nieuporzadkowane(ul)-->
+        <ul>
+        I know this
+        I dont know this
+        </ul>
+        <!--tabela - wiersze tworzymy za pomoca <tr>, kolumny przy pomocy tagu <td> 
+          <td> - nagłówek tabeli, można użyć w 1 wierszu, border-obramowanie -->
+        <table class = "tablica" style="color: cyan;" border="1">
+            <tr>
+              <th>kolumna 1</th> 
+              <th> kolumna 2</th> 
+              <th> kolumna 3</th> 
+            </tr>
+            <tr>
+                <td> wartosc 1</td> 
+                <td> wartosc 2</td> 
+              </tr>
+        </table>
+    </div>
+    <br> <br> <br>
+    <div id="stopka">
+        Fotter
+    </div>
+    <!-- linki - a href-->
+    <a href="contact.html">Contact me</a>
+    <br>
+    <!--tag <img> pozwala dodać obrazek, tresc atrybutu alt wyswietli się jeśli obrazek jest niedostępny, w src podajemy adres obrazka-->
+    <img src="https://picsum.photos/200/300" alt="niedostepny">
+
+    <div>
+        <!--dodawanie znaków specjalnych za pomoca &, znaki nazywaja sie character entities, mozna znalezc w internecie, podobnie emoji-->
+        copyright &copy;
+
+        <!--twarda spacja - uzywamy &nbsp, dzięki temu np. na telefonie tekst nie będzie sie przemieszcał, nie będą się rodzdzielały wyrazy-->
+        To jest &nbsp zdanie
+    </div>
+    <!--przed zamknieciem body dodajemy javascript:-->
+    <script src="scripts.js"></script>
+</body>
+</html>
